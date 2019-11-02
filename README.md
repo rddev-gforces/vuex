@@ -4,9 +4,9 @@ Vuex module to interface with AWS Cognito
 
 Docs Link: [https://cognito.vuetifyjs.com/](https://cognito.vuetifyjs.com/)
 
-Install:
+Install (Forked Version containing ie11 fix):
 ```bash
-yarn add @vuetify/vuex-cognito-module
+npm install https://github.com/rddev-gforces/vuex.git --save
 ```
 
 Import into your project's entry point (main.js in most Vue projects)
