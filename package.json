@@ -4,11 +4,12 @@
   "main": "dist/vuex-cognito-module.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vuex-cognito-module src/index.js && npx babel dist/vuex-cognito-module.umd.min.js --out-file dist/vuex-cognito-module.umd.min.js",
+    "build": "vue-cli-service build --target lib --name vuex-cognito-module src/index.js && babel dist/vuex-cognito-module.umd.min.js --out-file dist/vuex-cognito-module.umd.min.js",
     "lint": "vue-cli-service lint",
     "docs:deploy": "npm run docs:build && now --local-config docs.now.json && now alias --local-config docs.now.json",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "init-babel": "babel dist/vuex-cognito-module.umd.min.js --out-file dist/vuex-cognito-module.umd.min.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,15 @@
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
+    "@babel/plugin-proposal-function-sent": "^7.5.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.2.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.6.3",
+    "@babel/preset-stage-2": "^7.0.0",
     "@vue/babel-preset-app": "^3.0.4",
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-eslint": "^3.0.4",
